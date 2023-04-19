@@ -291,18 +291,18 @@ cardsOnDom(pets);
 console.log(pets);
 
 // function to filter pets by type
-const filter = (array,nameString) => {
-  const nameArray = [];
+const filter = (array,typeString) => {
+  const typeArray = [];
  
 
 
   for (const pet of array) {
-    if (pet.type === nameString) {
-      nameArray.push(pet);
+    if (pet.type === typeString) {
+      typeArray.push(pet);
     }
   }
 
-  return nameArray;
+  return typeArray;
 };
 
 const showCats = document.querySelector("#show-cats");
