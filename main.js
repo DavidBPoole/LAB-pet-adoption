@@ -264,9 +264,12 @@ const pets = [
 
 // Event listener exercise below:
 
+// This function takes a specified div ID and renders the html for it:
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
+  // This variable tells the function to find all of the instances within the HTML of the specified ID passed through it:
   selectedDiv.innerHTML = htmlToRender;
+  // This statement takes the variable/method above and assigns the innerHTML method to it which enables the selected div to be assigned the html
 };
 
 // get the cards on the DOM
@@ -276,11 +279,11 @@ const cardsOnDom = (array) => {
   for (const pet of array) {
     domString += `<div class="card" style="width: 18rem;">
      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
-     <div class="card-body">
+    <div class="card-body">
      <h5 class="card-title">${pet.name}</h5>
+     <p class="card-text">${pet.color}</p>
      <p class="card-text">${pet.specialSkill}</p>
-     <p>Type: ${pet.type}</p>
-     <p>Color: ${pet.color}</p>
+     <p class="card-text">${pet.type}</p>
     </div>
   </div>`;
   }
