@@ -340,12 +340,14 @@ const createPet = (e) => {
 
   const newPetObj = {
     id: pets.length +1,
-    image: document.querySelector("#name").value,
-    name: document.querySelector("#color").value,
-    color: document.querySelector("#skill").value,
-    quote: document.querySelector("#type").value,
-    quote: document.querySelector("#image").value,
+    name: document.querySelector("#petName").value,
+    color: document.querySelector("#petColor").value,
+    specialSkill: document.querySelector("#specialSkill").value,
+    type: document.querySelector("#petType").value,
+    imageURL: document.querySelector("#imageURL").value,
   }
+
+  console.log(document.querySelector("#imageURL").value,);
 
   pets.push(newPetObj);
   cardsOnDom(pets);
