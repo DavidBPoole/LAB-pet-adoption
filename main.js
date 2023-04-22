@@ -250,9 +250,9 @@ const pets = [
 //     <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
 //   <div class="card-body">
 //     <h5 class="card-title">${pet.name}</h5>
+//     <p class="card-text">${pet.color}</p>
 //     <p class="card-text">${pet.specialSkill}</p>
-//     <p>Type: ${pet.type}</p>
-//     <p>Color: ${pet.color}</p>
+//     <p class="card-text">${pet.type}</p>
 //   </div>
 // </div>`;
 // }
@@ -272,7 +272,7 @@ const renderToDom = (divId, htmlToRender) => {
   // This statement takes the variable/method above and assigns the innerHTML method to it which enables the selected div to be assigned the html
 };
 
-// get the cards on the DOM
+// // get the cards on the DOM
 const cardsOnDom = (array) => {
 
   let domString = "";
@@ -293,12 +293,10 @@ const cardsOnDom = (array) => {
 cardsOnDom(pets);
 console.log(pets);
 
-// function to filter pets by type
+// // function to filter pets by type
 const filter = (array,typeString) => {
   const typeArray = [];
  
-
-
   for (const pet of array) {
     if (pet.type === typeString) {
       typeArray.push(pet);
@@ -312,10 +310,6 @@ const showCats = document.querySelector("#show-cats");
 const showDogs = document.querySelector("#show-dogs");
 const showDinos = document.querySelector("#show-dinos");
 const showAll = document.querySelector("#all-pets");
-
-showAll.addEventListener("click", () => {
-  cardsOnDom(pets);
-});
 
 showCats.addEventListener("click", () => {
   const cats = filter(pets, "cat");
