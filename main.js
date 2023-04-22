@@ -329,3 +329,29 @@ showDinos.addEventListener("click", () => {
 showAll.addEventListener("click", () => {
   cardsOnDom(pets);
 });
+
+// Create Pets Form 4/22:
+// 1. select/target the form on the DOM
+const form = document.querySelector('form');
+
+// 2. create a function that grabs all the values from the form, pushes the new object to the array, then repaints the DOM with the new pet.
+const createPet = (e) => {
+  e.preventDefault();
+
+  const newPetObj = {
+    id: pets.length +1,
+    name: document.querySelector("#petName").value,
+    color: document.querySelector("#petColor").value,
+    specialSkill: document.querySelector("#specialSkill").value,
+    type: document.querySelector("#petType").value,
+    imageURL: document.querySelector("#imageURL").value,
+  }
+
+  console.log(document.querySelector("#imageURL").value,);
+
+  pets.push(newPetObj);
+  cardsOnDom(pets);
+  form.reset();
+}
+
+form.addEventListener('submit', createPet);
