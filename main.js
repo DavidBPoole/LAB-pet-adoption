@@ -284,6 +284,7 @@ const cardsOnDom = (array) => {
      <p class="card-text">${pet.color}</p>
      <p class="card-text">${pet.specialSkill}</p>
      <p class="card-text">${pet.type}</p>
+     <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
     </div>
   </div>`;
   }
