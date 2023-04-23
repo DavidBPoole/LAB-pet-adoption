@@ -355,3 +355,46 @@ const createPet = (e) => {
 }
 
 form.addEventListener('submit', createPet);
+
+// ******************** //
+// ****** DELETE ****** //
+// ******************** //
+
+// Here we will be using event bubbling
+// 1. Target the app div
+// 2. Add an event listener to capture clicks
+// 3. check e.target.id includes "delete"
+// 4. add logic to remove from array
+// 5. Repaint the DOM with the updated array
+// 6. Organize code so that everything is in a function except selectors
+
+// 1. Target the app div
+// 2. Add an event listener to capture clicks
+const app = document.querySelector("#app");
+
+app.addEventListener('click', (e) => {
+  // console.log(e.target.id);
+  
+// 3. check e.target.id includes "delete"
+  if (e.target.id.includes("delete")) {
+    // destructuring: https://github.com/orgs/nss-evening-web-development/discussions/11
+    const [, id] = e.target.id.split("--");
+
+// 4. add logic to remove from array
+    // .findIndex is an array method
+    const index = pets.findIndex(e => e.id === Number(id));
+    console.log("index", index);
+    // .splice modifies the original array
+    pets.splice(index, 1)
+
+// 5. Repaint the DOM with the updated array
+    cardsOnDom(pets);
+  }
+});
+
+const startApp = () => {
+  cardsOnDom(pets);
+  // events(); // ALWAYS LAST
+}
+
+startApp();
