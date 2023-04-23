@@ -344,7 +344,7 @@ const createPet = (e) => {
     color: document.querySelector("#petColor").value,
     specialSkill: document.querySelector("#specialSkill").value,
     type: document.querySelector("#petType").value,
-    imageURL: document.querySelector("#imageURL").value,
+    imageUrl: document.querySelector("#imageURL").value,
   }
 
   console.log(document.querySelector("#imageURL").value,);
