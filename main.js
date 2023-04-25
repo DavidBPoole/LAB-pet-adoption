@@ -371,17 +371,31 @@ const form = document.querySelector('form');
 // 2. create a function that grabs all the values from the form, pushes the new object to the array, then repaints the DOM with the new pet.
 const createPet = (e) => {
   e.preventDefault();
-
   const newPetObj = {
     id: pets.length +1,
     name: document.querySelector("#petName").value,
     color: document.querySelector("#petColor").value,
     specialSkill: document.querySelector("#specialSkill").value,
     type: document.querySelector("#petType").value,
+    // type: document.querySelectorAll('#radioTypeCat, #radioTypeDog, #radioTypeDino').value,
     imageUrl: document.querySelector("#imageURL").value,
   }
 
   console.log(document.querySelector("#imageURL").value,);
+
+  // Attempt #4 at resolving broken radio buttons - still not working ->
+  // document.querySelector('input[name="radioButtons"]:checked').value
+  //   <input class="form-check-input" type="radio" value="cat" name="radioButtons" id="radioTypeCat">;
+  
+  {/* document.querySelector('input[name="radioButtons"]:checked').value */}
+
+
+  {/* // document.getElementByName('radioButtons')
+  //     .forEach(radio => { */}
+  //       if (radio.checked) {
+  //           console.log(radio.value);
+  //       }
+  //     });
 
 // Another attempt at hooking up the radio buttons with answers from github discussion ticket:
 // var radioButtons = document.getElementsByName('radioButtons');
