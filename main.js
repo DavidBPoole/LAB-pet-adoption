@@ -37,7 +37,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "cat",
-      imageUrl: "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg"
+      imageUrl: "https://cdn.shopify.com/s/files/1/0344/6469/files/black_cat_copy.jpg?v=1538930222"
     },
     {
       id: 6,
