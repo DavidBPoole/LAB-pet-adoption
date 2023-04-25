@@ -382,6 +382,10 @@ const createPet = (e) => {
   }
 
   console.log(document.querySelector("#imageURL").value,);
+  
+  // Below is an attempt to fix the broken radio buttons, but Im not clear on the methods to resolve - may need follow-up.
+  // document.querySelector('input[name="pet-type"]:checked')
+  //   <input class="form-check-input" type="radio" value="cat" name="radioPetType" id="petType">
 
   pets.push(newPetObj);
   cardsOnDom(pets);
