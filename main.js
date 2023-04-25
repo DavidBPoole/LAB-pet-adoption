@@ -382,7 +382,32 @@ const createPet = (e) => {
   }
 
   console.log(document.querySelector("#imageURL").value,);
-  
+
+// Another attempt at hooking up the radio buttons with answers from github discussion ticket:
+// var radioButtons = document.getElementsByName('radioButtons');
+
+// for (var i = 0; i < radio.length; i ++) {
+//   radio[i].addEventListener('change', function() {
+//     console.log(this.value);
+//   });
+// };
+
+  // Below is another attempt to get radio buttons hooked up:
+  // const radioButtons = document.querySelectorAll('input[name="radioPetType"]');
+
+  // radioButtons.forEach(function(radioButton) {
+  //   radioButton.addEventListener('change', function() {
+  //     // Code to execute when the radio button is clicked
+  //     if (radioButton.value === "Cat") {
+  //       petType.push(cat);
+  //     } else if (radioButton.value === "Dog") {
+  //       petType.push(dog);
+  //     } else (radioButton.value === "Dino") {
+  //       petType.push(dino);
+  //     }
+  //   });
+  // });
+
   // Below is an attempt to fix the broken radio buttons, but Im not clear on the methods to resolve - may need follow-up.
   // document.querySelector('input[name="pet-type"]:checked')
   //   <input class="form-check-input" type="radio" value="cat" name="radioPetType" id="petType">
