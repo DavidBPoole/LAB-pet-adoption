@@ -377,7 +377,13 @@ const createPet = (e) => {
     color: document.querySelector("#petColor").value,
     specialSkill: document.querySelector("#specialSkill").value,
     type: document.querySelector("#petType").value,
-    // type: document.querySelectorAll('#radioTypeCat, #radioTypeDog, #radioTypeDino').value,
+    // ******************Below are attempts to get the radio buttons working***************
+    // I followed multiple instructions including those at youtube address (https://www.youtube.com/watch?v=cSuEAD-Tnd4) and it is still unclear how to connect things so the buttons are assigned the DOM doesnt break. At minimum the MVP is working so may need to just stop here.
+    // type: document.querySelector('#radioTypeCat, #radioTypeDog, #radioTypeDino').value,
+    // type: document.querySelector('input[name="radioButtons"]:checked')
+    // <input class="form-check-input" type="radio" value="cat" name="radioButtons" id="radioTypeCat">;
+    // {/* type: document.querySelector('input["radioButtons"]:checked'); */}
+    // {/* document.form.radioButtons */}
     imageUrl: document.querySelector("#imageURL").value,
   }
 
