@@ -1,7 +1,6 @@
-body {
+/* body {
   background-color: blanchedalmond;
-  
-}
+} */
 
 #app {
   display: flex;
@@ -45,7 +44,14 @@ button {
   border: 2px solid white;
 }
 
-/* #test-button {
-  display: flex;
-  justify-content: center;
-} */
+.cats {
+  background-color: skyblue;
+}
+
+.dog {
+  background-color: green;
+}
+
+.dino {
+  background-color: orange;
+}
