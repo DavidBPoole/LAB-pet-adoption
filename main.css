@@ -6,19 +6,34 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  font: bold;
 }
+
+/* .card-body {
+  border: 3px solid black;
+} */
 
 .filter-buttons {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   column-gap: 25px;
+  margin-bottom: 5px;
+  margin-top: 5px;
   /* border: 10px solid white; */
   /* text-align: center; */
   /* flex-direction: column; */
   /* flex-wrap: wrap; */
   /* justify-content: center; */
   /* align-content: center; */
+}
+
+#modal-button {
+  width: 150px;
+  box-shadow: 5px 5px black;
+  border: 2px solid black;
+  font-size: 20px;
+  color: white;
 }
 
 button {
@@ -34,26 +49,40 @@ button {
   border: 2px solid black;
   margin-bottom: 10px;
   margin-top: 10px;
+  font-size: 20px;
+  color: white;
 }
 
 #show-dogs {
+  background-color: rgb(223, 160, 0);
   border: 2px solid black;
   margin-bottom: 10px;
   margin-top: 10px;
+  font-size: 20px;
+  color: white;
 }
 
 #show-dinos {
-  background-color: orange;
+  background-color: lightseagreen;
   border: 2px solid black;
   margin-bottom: 10px;
   margin-top: 10px;
+  font-size: 20px;
+  color: white;
 }
 
 #all-pets {
   border: 2px solid black;
   margin-bottom: 10px;
   margin-top: 10px;
+  font-size: 20px;
+  color: white;
 }
+
+/* #exampleModalLabel {
+  font-size: 50px;
+  color: white;
+} */
 
 #form-submit {
   margin-bottom: 10px;
@@ -63,12 +92,18 @@ button {
 
 .cats {
   background-color: skyblue;
+  border: 3px solid black;
+  margin: 10px;
 }
 
 .dog {
-  background-color:mediumseagreen;
+  background-color: rgb(223, 160, 0);
+  border: 3px solid black;
+  margin: 10px;
 }
 
 .dino {
-  background-color: orange;
+  background-color: lightseagreen;
+  border: 3px solid black;
+  margin: 10px;
 }
