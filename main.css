@@ -1,5 +1,7 @@
 body {
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
+  background-image:url("https://static.vecteezy.com/system/resources/thumbnails/001/254/563/small_2x/the-texture-of-green-grass.jpg");
+  background-attachment: fixed;
 }
 
 #app {
@@ -7,11 +9,13 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   font: bold;
+  font-size: 30px;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  color: whitesmoke;
 }
-
-/* .card-body {
-  border: 3px solid black;
-} */
 
 .filter-buttons {
   display: flex;
@@ -20,6 +24,10 @@ body {
   column-gap: 25px;
   margin-bottom: 5px;
   margin-top: 5px;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
   /* border: 10px solid white; */
   /* text-align: center; */
   /* flex-direction: column; */
@@ -31,51 +39,61 @@ body {
 #modal-button {
   width: 150px;
   box-shadow: 5px 5px black;
-  border: 2px solid black;
-  font-size: 20px;
+  border: 2px solid greenyellow;
+  font-size: 25px;
+  font-weight: bold;
   color: white;
 }
 
 button {
-  width: 90px;
+  width: 120px;
   box-shadow: 3px 3px black;
   margin-left: 5px;
   margin-bottom: 5px;
-  /* border: 10px solid white; */
 }
+
+/* .btn btn-danger {
+  text-align: center bottom;
+  justify-content: center bottom;
+} */
 
 #show-cats {
   color: white;
-  border: 2px solid black;
+  background-color: rgb(1, 198, 252);
+  border: 2px solid greenyellow;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   color: white;
 }
 
 #show-dogs {
   background-color: rgb(223, 160, 0);
-  border: 2px solid black;
+  border: 2px solid greenyellow;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   color: white;
 }
 
 #show-dinos {
   background-color: lightseagreen;
-  border: 2px solid black;
+  border: 2px solid greenyellow;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   color: white;
 }
 
 #all-pets {
-  border: 2px solid black;
+  border: 2px solid greenyellow;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   color: white;
 }
 
@@ -86,24 +104,27 @@ button {
 }
 
 .cats {
-  background-color: skyblue;
-  border: 3px solid black;
+  background-color: rgb(1, 198, 252);
+  border: 3px solid greenyellow;
+  border-radius: 15px;
   margin: 10px;
-  padding: 3.5px;
+  padding: 10px;
 }
 
 .dog {
   background-color: rgb(223, 160, 0);
-  border: 3px solid black;
+  border: 3px solid greenyellow;
+  border-radius: 15px;
   margin: 10px;
-  padding: 3.5px;
+  padding: 10px;
 }
 
 .dino {
   background-color: lightseagreen;
-  border: 3px solid black;
+  border: 3px solid greenyellow;
+  border-radius: 15px;
   margin: 10px;
-  padding: 3.5px;
+  padding: 10px;
 }
 
 .card-text::first-letter {
